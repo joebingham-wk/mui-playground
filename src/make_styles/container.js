@@ -1,6 +1,10 @@
-import { makeStyles } from "@material-ui/core/styles";
+import {createMuiTheme, makeStyles} from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import React from "react";
+
+// const rtlTheme = createMuiTheme({
+//   direction: "ltr",
+// });
 
 const useStyles = makeStyles({
   root: (props) => ({
@@ -8,6 +12,8 @@ const useStyles = makeStyles({
     width: "100%",
     height: 500,
   }),
+}, {
+  flip: null,
 });
 
 export default function ContainerWrapper(props) {
