@@ -40,3 +40,15 @@ export const SpecifiedIndexButtonWithStyles = styled(
 )(
     themedStyles,
     {index: 1, meta: 'This should be the last style tag in the header'})
+
+export const MiscOptionsWithStyles = styled(
+    (props) => {
+        return (
+            <Button className={props.className}>
+                With Specified Index
+            </Button>
+        )
+    }
+)(
+    themedStyles,
+    {name: 'this-is-a-custom-name', meta: 'this meta is set manually'})

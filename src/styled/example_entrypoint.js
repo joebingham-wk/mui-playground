@@ -10,10 +10,12 @@ import {
 
 import {
     CustomThemedButton,
-    SpecifiedIndexButtonWithStyles
+    SpecifiedIndexButtonWithStyles,
+    MiscOptionsWithStyles,
 } from "./options_examples";
 
 export default function StyledExample() {
+
     return (
         <React.Fragment>
             {/*<Container>*/}
@@ -38,6 +40,7 @@ export default function StyledExample() {
             {/*<MyStyledButton color="red">Red</MyStyledButton>*/}
             {/*<MyStyledButton color="blue">Blue</MyStyledButton>*/}
             <SpecifiedIndexButtonWithStyles />
+            <MiscOptionsWithStyles />
         </React.Fragment>
     )
 }
